@@ -13,7 +13,7 @@ console.log(MithunMile);
 
 ///...............................Wood Calculation............................./////
 
-function woodcalculator(chair,table,bed){
+function woodCalculator(chair,table,bed){
 
     var chairCount =  chair*1;
     var tableCount =  table*3;
@@ -24,7 +24,7 @@ function woodcalculator(chair,table,bed){
     return totalWood;
  }
 
- var woodResult = woodcalculator(10,9,8);
+ var woodResult = woodCalculator(10,9,8);
  console.log(woodResult);
 
  ////........................Brick Calculator...............................///
