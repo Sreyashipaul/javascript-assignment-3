@@ -27,6 +27,36 @@ function woodcalculator(chair,table,bed){
  var woodResult = woodcalculator(10,9,8);
  console.log(woodResult);
 
+ ////........................Brick Calculator...............................///
+
+ function brickCalculator (floor){
+     var totalHeight;
+     var totalBrick;
+
+     if(floor<=10){
+         totalHeight = floor*15;
+         totalBrick = totalHeight*1000;
+
+     }
+     else if(floor<=20)
+     {
+         totalHeight =(10*15)+(10*12);
+         totalBrick = totalHeight*1000;
+     }
+
+       else{
+         if(floor>=21){
+             totalHeight=(10*15)+(10*12)+(floor*10);
+             totalBrick = totalHeight*1000-(200000);
+         }
+     }
+     return totalBrick;
+ }
+
+  var result = brickCalculator(21);
+  console.log(result);
+
+
 ///.........................Friends Name....................................////
 
 function tinyFriend (names)
