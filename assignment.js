@@ -27,22 +27,24 @@ function woodcalculator(chair,table,bed){
  var woodResult = woodcalculator(10,9,8);
  console.log(woodResult);
 
-///.........................Friends Name...............................
+///.........................Friends Name....................................////
+
 function tinyFriend (names)
 {
-    var smallName = names[0].length;
+    var smallName = names[0];
     tinyName = names [0];
     for(var i=0; i<names.length;i++){
-      var currentName=names[i].length;
+      var currentName=names[i];
       
-      if(currentName<smallName){
-          tinyName=currentName[i];
+      if(currentName.length< smallName.length){
+          smallName=currentName;
       }
       
      }
-     return tinyName;
+     return smallName;
     }
      
   
-     var smallestName=tinyFriend(['Deva','Sreyo','Ishita','Promi','Moumita','Antu','Bishow','Devashis','Sreyashi']);
-     console.log(smallestName);
+     var result=tinyFriend(['Oishe','Porshi','Sreyo','Sreyoshi','Deva','Ishita','Promi','Mumi','Moumita','Antu','Bishow','Devashis','sreyo']);
+     console.log(result);
+
